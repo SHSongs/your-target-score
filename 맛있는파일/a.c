@@ -13,29 +13,29 @@ int main()
 	double testB;
 	double suhangCNT;
 
-	printf("ºñÀ²Àº ¹éÀ²·ü·Î ÀÔ·Â \n\n");
-	printf("¼öÇàÆò°¡ÀÇ ºñÀ²À» ÀÔ·Â : ");
+	printf("ë¹„ìœ¨ì€ ë°±ìœ¨ë¥ ë¡œ ì…ë ¥ \n\n");
+	printf("ìˆ˜í–‰í‰ê°€ì˜ ë¹„ìœ¨ì„ ì…ë ¥ : ");
 	scanf_s("%lf", &suhangB);
 
 	testB = 100 - suhangB;
-	printf("¼öÇàÆò°¡ÀÇ °³¼ö¸¦ ÀÔ·Â");
+	printf("ìˆ˜í–‰í‰ê°€ì˜ ê°œìˆ˜ë¥¼ ì…ë ¥");
 	scanf_s("%lf", &suhangCNT);
 
 	struct suhang sususu[20];
 
-	printf("°¢ ¼öÇàÆò°¡ÀÇ ºñÀ²°ú Á¡¼ö¸¦ ÀÔ·Â¹Ş½À´Ï´Ù.\n\n");
+	printf("ê° ìˆ˜í–‰í‰ê°€ì˜ ë¹„ìœ¨ê³¼ ì ìˆ˜ë¥¼ ì…ë ¥ë°›ìŠµë‹ˆë‹¤.\n\n");
 
 	for (int i = 0; i < suhangCNT; i++)
 	{
-		printf("ºñÀ² : ");
+		printf("ë¹„ìœ¨ : ");
 		scanf_s("%lf", &sususu[i].Biul);
 		sususu[i].Biul /= 100;
-		printf("Á¡¼ö : ");
+		printf("ì ìˆ˜ : ");
 		scanf_s("%lf", &sususu[i].score);
 		printf("\n");
 	}
 
-	double sum = 0, n;		//ÇÕ 
+	double sum = 0, n;		//í•© 
 	double A = 89.5, B = 79.5;
 	for (int i = 0; i < suhangCNT; i++)
 	{
@@ -45,15 +45,15 @@ int main()
 
 
 	
-	A = 89.5 - sum;			//ÁöÇÊÀÇ Á¡¼ö 
+	A = 89.5 - sum;			//ì§€í•„ì˜ ì ìˆ˜ 
 	B = 79.5 - sum;
 
 	A = (A / testB) * 100;
 	B = (B / testB) * 100;
 
-	printf("A¸¦ ¹ŞÀ¸·Á¸é : %lf\n", A);
+	printf("Aë¥¼ ë°›ìœ¼ë ¤ë©´ : %lf\n", A);
 
-	printf("B¸¦ ¹ŞÀ¸·Á¸é : %lf", B);
+	printf("Bë¥¼ ë°›ìœ¼ë ¤ë©´ : %lf\n", B);
 
 
 	system("PAUSE");
