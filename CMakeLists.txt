@@ -8,5 +8,5 @@ include_directories(lib/googletest-release-1.10.0/googlemock/include)
 
 add_subdirectory(calculator)
 add_subdirectory(src)
-add_subdirectory(Tests)
+add_subdirectory(test)
 
