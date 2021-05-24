@@ -5,7 +5,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include "ClassName.h"
-#include <calc.h>
+#include <Calc.h>
 
 using testing::Eq;
 
@@ -15,19 +15,21 @@ namespace
 	{
 	public:
 		ClassName obj;
+		Calc calc;
 
 		ClassDeclar()
 		{
-			obj;
+			calc;
 		}
 	};
 }
 
 TEST_F(ClassDeclar, nameOfT1)
 {
-	obj.setAge(22);
+	calc.performanceAssessmentCNT = 2;
+	calc.performanceAssessmentRatio = 10;
 
-	ASSERT_EQ(22, obj.getAge());
+	ASSERT_EQ(2, calc.performanceAssessmentCNT);
 }
 
 TEST_F(ClassDeclar, nameOfT2)

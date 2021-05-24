@@ -1,8 +1,8 @@
 
 add_library(
         calculator
-        include/calc.h
-        src/calc.cpp
+        include/Calc.h
+        src/Calc.cpp
 )
 
 

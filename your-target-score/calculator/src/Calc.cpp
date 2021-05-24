@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-#include "calc.h"
+#include "Calc.h"
 
 void hello::say()
 {
