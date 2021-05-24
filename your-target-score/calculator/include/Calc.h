@@ -22,12 +22,14 @@ struct Assessment
 
 class Calc
 {
-public:
+private:
 	double performanceAssessmentRatio;
 	int performanceAssessmentCNT;
+	double sum = 0;
+
+public:
 	struct Assessment performanceAssessmentScoreArr[20];
 	double testRatio;
-	double sum = 0;
 
 
 	Calc()
@@ -61,7 +63,7 @@ public:
 		calcSum();
 	}
 
-	void calcSum()
+	double calcSum()
 	{
 		for (int i = 0; i < performanceAssessmentCNT; i++)
 		{
@@ -69,7 +71,7 @@ public:
 					performanceAssessmentScoreArr[i].score * performanceAssessmentScoreArr[i].ratio;
 			sum += performanceAssessmentScoreArr[i].score;
 		}
-
+		return sum;
 	}
 
 	double calcScore(double TargetScore)
