@@ -53,3 +53,5 @@ dkms.conf
 
 /.idea
 /cmake-build-debug
+
+/lib/googletest-release-1.10.0
